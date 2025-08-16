@@ -1,0 +1,528 @@
+@font-face {
+    font-family: 'Plain';
+    /* Choose a name for your font */
+    src: url('../fonts/plain-light-webfont.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'silkaerif';
+    /* Choose a name for your font */
+    src: url('../fonts/silkserif-regularitalic-webfont.woff') format('woff');
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,
+body {
+    cursor: none;
+    background-color: #151515;
+    overflow: hidden;
+}
+
+
+.main {
+    opacity: 0;
+    visibility: hidden;
+    background-color: #151515;
+}
+
+
+.cursor {
+    background-color: transparent;
+    height: 2vw;
+    width: 2vw;
+    position: fixed;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.405);
+    z-index: 100;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+
+
+
+
+._canvas_container {
+    z-index: 99999 !important;
+    pointer-events: none;
+}
+
+
+
+
+
+@media (width < 600px) {
+
+    .cursor,
+    .main .page1 .nav,
+    .main .page1 .heading,
+    .main .page1 .nav .para,
+    .main .page1 .nav .nav-part2,
+    .page1 #flag {
+        pointer-events: none;
+    }
+
+    html {
+        overflow-x: hidden !important;
+        overflow-y: auto;
+    }
+
+    main {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .cursor {
+        display: none;
+    }
+
+    /* Page 1 */
+    .main .page1 {
+        height: 50vh !important;
+    }
+
+    .main .page1 .nav {
+        height: 10vh;
+    }
+
+    .main .page1 .nav .nav-part1 {
+        width: 100vw !important;
+    }
+
+    .main .page1 .nav .nav-part1 i {
+        font-size: 8vw !important;
+    }
+
+    .main .page1 .nav .para,
+    .main .page1 .nav .nav-part2,
+    .page1 #flag {
+        display: none !important;
+    }
+
+    .main .page1 .heading {
+        height: 40vh !important;
+        justify-content: flex-start !important;
+    }
+
+    .main .page1 .heading .lines {
+        width: 100vw !important;
+        height: 7vh !important;
+        justify-content: flex-start;
+        padding-left: 4vw !important;
+    }
+
+    .main .page1 .heading .lines h1 {
+        font-size: 12vw !important;
+        letter-spacing: .5vw;
+    }
+
+    .main .page1 .heading .lines #web {
+        width: 24vw !important;
+    }
+
+    .main .page1 .heading .lines #graphic {
+        width: 54vw !important;
+    }
+
+    .main .page2 {
+        height: 50vh !important;
+        padding-top: 7vh !important;
+        pointer-events: all !important;
+    }
+
+    .main .page2 .video-contener {
+        opacity: 1;
+        width: 100% !important;
+        height: 40vh !important;
+        left: 0% !important;
+        transform: translateX(0);
+        pointer-events: all;
+    }
+
+    .main .page2 .video-contener img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+        z-index: 50;
+        position: absolute;
+        transition: all linear 0.2s;
+    }
+
+    .main .page2 .play-cursor {
+        height: 20vw !important;
+        width: 20vw !important;
+        top: 50% !important;
+        left: 50% !important;
+        pointer-events: all;
+        opacity: 1;
+    }
+
+    .main .page2 .play-cursor i {
+        font-size: 5vw !important;
+    }
+
+    .main .page3 {
+        height: fit-content;
+        margin-top: 10vh;
+    }
+
+    .main .page3 .heading-2 {
+        height: 10vh !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        padding: 0 4vw;
+    }
+
+    .main .page3 .heading-2 h1 {
+        font-size: 11vw !important;
+    }
+
+    .main .page3 .heading-2 .underline {
+        width: 100% !important;
+        align-self: center;
+    }
+
+    .main .page3 .project-showcase {
+        padding: 5vw 4vw !important;
+        margin-top: 13vw !important;
+        display: grid;
+        grid-template-columns: 1fr !important;
+        grid-gap: 2vw;
+        row-gap: 0;
+    }
+
+
+    .main .page3 .project-showcase .circle1,
+    .main .page3 .project-showcase .circle2,
+    .main .page3 .project-showcase .circle3 {
+        display: none !important;
+    }
+
+    .main .page3 .project-showcase .project1,
+    .main .page3 .project-showcase .project2,
+    .main .page3 .project-showcase .project3,
+    .main .page3 .project-showcase .project4,
+    .main .page3 .project-showcase .project5,
+    .main .page3 .project-showcase .project6 {
+        width: 100%;
+        pointer-events: none;
+        margin-top: 3vh !important;
+    }
+
+    .main .page3 .project-showcase .project1,
+    .main .page3 .project-showcase .project5 {
+        height: 60vh;
+        margin-top: 0 !important;
+    }
+
+    .main .page3 .project-showcase .project2,
+    .main .page3 .project-showcase .project3,
+    .main .page3 .project-showcase .project4,
+    .main .page3 .project-showcase .project6 {
+        height: 80vh !important;
+    }
+
+    .main .page3 .project-showcase [class*="project"] .pro-head {
+        width: 100%;
+        height: 9% !important;
+    }
+
+    .main .page3 .project-showcase [class*="project"] .pro-head h1 {
+        font-size: 7vw !important;
+    }
+
+
+    .main .page3 .project-showcase [class*="project"] .description {
+        height: 18%;
+    }
+
+    .main .page3 .project-showcase [class*="project"] .description p {
+        font-size: 4vw !important;
+        font-family: 'Plain';
+    }
+
+    .main .page3 .project-showcase [class*="project"] .description p:nth-child(1) {
+        width: 60%;
+    }
+
+
+
+
+
+    .main .page3 .project-showcase .circle4 {
+        width: 40vw !important;
+        height: 40vw !important;
+        top: 102% !important;
+        right: 30% !important;
+        pointer-events: none;
+    }
+
+
+
+    .main .page4 {
+        margin-top: 40vh;
+    }
+
+    .main .page4 .heading-3 {
+        height: 10vh !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        padding: 0 4vw;
+    }
+
+    .main .page4 .heading-3 h1 {
+        font-size: 11vw !important;
+    }
+
+    .main .page4 .heading-3 .underline {
+        width: 100% !important;
+        align-self: center;
+    }
+
+
+    .main .page4 .about {
+        margin-left: 0vw !important;
+        margin-top: 5vw;
+        /* background-color: burlywood; */
+        width: 100%;
+        height: 80vh !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        gap: 5vw;
+        position: relative;
+        padding-left: 4vw !important;
+        padding-right: 4vw !important;
+    }
+
+    .main .page4 .about .para {
+        /* background-color: aqua; */
+        font-size: 6.4vw !important;
+        width: 80% !important;
+        font-family: 'Plain';
+        line-height: 6.6vw !important;
+        align-self: start;
+    }
+
+    .main .page4 .about .photo {
+        display: flex;
+        flex-direction: column !important;
+        gap: 16vw !important;
+        height: 50vh !important;
+        flex-wrap: nowrap !important;
+        width: 100%;
+    }
+
+    .main .page4 .about .photo img {
+        width: 100% !important;
+        height: 80%;
+        order: 2 !important;
+    }
+
+    .main .page4 .about .photo p {
+        width: 70% !important;
+        font-size: 3.9vw !important;
+        order: 1 !important;
+
+    }
+
+    .main .page4 .about .awwwards {
+        height: 83vw !important;
+        width: 91% !important;
+        top: 135% !important;
+        left: 4% !important;
+    }
+
+    .main .page4 .about .awwwards .aww p:nth-child(1) {
+        font-size: 3.6vw !important;
+        font-weight: 600 !important;
+    }
+
+    .main .page4 .about .awwwards .aww p:nth-child(2) {
+        font-size: 2vw !important;
+    }
+
+    .main .page4 .underline {
+        width: 90% !important;
+        margin-top: 80vh !important;
+        margin-left: 4vw !important;
+        align-self: center !important;
+    }
+
+
+    .main .page4 .work-with {
+        margin-left: 4vw !important;
+        margin-top: 10vw !important;
+        font-size: 7vw !important;
+    }
+
+
+
+
+    .main .page4 .scroll-animetion {
+        height: 40vh !important;
+        margin-top: 10vw !important;
+    }
+
+
+    .main .page4 .scroll-animetion .marquee1 .line {
+        animation: scroll-1 25s linear infinite;
+    }
+
+    .main .page4 .scroll-animetion .marquee1 .line span {
+        font-size: 12.5vw !important;
+    }
+
+
+    .main .page4 .scroll-animetion .marquee2 .line span {
+        font-size: 12.5vw !important;
+    }
+
+
+
+    .main .page5 {
+        /* pointer-events: none; */
+        height: 60vh !important;
+        width: 100%;
+        background-color: #151515;
+        position: relative;
+        margin-top: 25vw;
+    }
+
+    .main .page5 .heading-3 {
+        height: 10vh !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        padding: 0 4vw;
+    }
+
+    .main .page5 .heading-3 h1 {
+        font-size: 11vw !important;
+    }
+
+    .main .page5 .heading-3 .underline {
+        width: 100% !important;
+        align-self: center;
+    }
+
+
+
+
+
+    .main .page5 .footer {
+        pointer-events: none !important;
+        width: 100% !important;
+        margin-left: 4vw !important;
+        gap: 7vw !important;
+    }
+
+    .main .page5 .footer .social {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1vw;
+        height: 100%;
+        width: 30% !important;
+    }
+
+    .main .page5 .footer .social p {
+        font-family: 'Plain';
+        margin-bottom: 6vw !important;
+        font-size: 4vw !important;
+        font-weight: 500;
+    }
+
+
+    .main .page5 .footer .social .platfrom1,
+    .main .page5 .footer .social .platfrom2,
+    .main .page5 .footer .social .platfrom3,
+    .main .page5 .footer .social .platfrom4,
+    .main .page5 .footer .social .platfrom5,
+    .main .page5 .footer .social .platfrom6 {
+        font-family: 'Plain';
+        font-size: 2.3vw !important;
+    }
+
+
+
+
+
+
+    .main .page5 .footer .contact {
+        display: flex;
+        gap: 12vw !important;
+        height: 100%;
+    }
+
+
+
+    .main .page5 .footer .contact .address {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        width: 20% !important;
+    }
+
+
+
+    .main .page5 .footer .contact .address p {
+        font-family: 'Plain';
+        margin-bottom: 6vw !important;
+        font-size: 4vw !important;
+        font-weight: 500;
+    }
+
+
+    .main .page5 .footer .contact .address h1 {
+        font-family: 'Plain';
+        font-size: 2.7vw !important;
+    }
+
+    .main .page5 .footer .contact .email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .page5 .footer .contact .email p {
+        font-family: 'Plain';
+        margin-bottom: 6vw !important;
+        font-size: 4vw !important;
+        font-weight: 500;
+    }
+
+
+
+    .main .page5 .footer .contact .email .em h1 {
+        font-size: 2.3vw !important;
+    }
+
+    .main .page5 .underline5 {
+        width: 90% !important;
+        margin-left: 4vw !important;
+        background-color: white;
+    }
+
+    .loader {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+
+
+    .loader .waiting-sms {
+        top: 60% !important;
+        left: 20% !important;
+        font-size: 3vw !important;
+    }
+
+}

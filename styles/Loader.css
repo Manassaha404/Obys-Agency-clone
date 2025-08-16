@@ -1,0 +1,115 @@
+.loader {
+    /* display: none; */
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+    padding: 12vw 5vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+
+.loader .content {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.loader .content .line {
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+}
+
+
+.loader .content .line h1 {
+    font-size: 7vw;
+    letter-spacing: .3vw;
+    text-transform: uppercase;
+    font-family: Plain;
+    line-height: 7vw;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+
+.loader .content .line .timer {
+    width: 24vw;
+    opacity: 0;
+}
+
+
+.loader .content .line .timer h5 {
+    display: inline-block;
+    text-align: center;
+    width: 7vw;
+    margin-left: 4vw;
+    font-size: 3.5vw;
+    font-family: silkaerif;
+    font-weight: 400;
+}
+
+
+.loader .content .line .timer h4 {
+    display: inline-block;
+    font-size: 3.5vw;
+    font-family: silkaerif;
+    font-weight: 400;
+}
+
+
+.loader .content .line .now {
+    margin-left: 2vw;
+    font-family: Plain;
+    font-weight: 700;
+
+    animation-name: blink;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes blink {
+    0% {
+        font-family: Plain;
+        opacity: 1;
+        font-weight: 700;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        font-family: silkaerif;
+        -webkit-text-stroke: 2px rgb(251, 251, 251);
+        color: transparent;
+        font-weight: 400;
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        font-family: Plain;
+        opacity: 1;
+        font-weight: 700;
+    }
+}
+
+
+.loader .waiting-sms {
+    font-family: Plain;
+    position: absolute;
+    top: 70%;
+    left: 29.5%;
+    font-size: 1vw;
+    overflow: hidden;
+    opacity: 0;
+}

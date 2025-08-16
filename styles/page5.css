@@ -1,0 +1,146 @@
+.main .page5 {
+    /* pointer-events: none; */
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    position: relative;
+}
+
+.main .page5 .heading-3 {
+    height: 27vh;
+    width: 70vw;
+    margin-left: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+
+
+.main .page5 .heading-3 h1 {
+    font-family: 'Plain';
+    text-transform: uppercase;
+    font-size: 7vw;
+}
+
+.main .page5 .heading-3 .underline1 {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.main .page5 .heading-3 h1 svg {
+    height: 8vw;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 17%;
+}
+
+
+.main .page5 .footer {
+    height: 50%;
+    width: 70%;
+    /* background-color: blue; */
+    margin-left: 30vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7vw;
+    /* padding-right: 10vw; */
+}
+
+
+.main .page5 .footer .social {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1vw;
+    height: 100%;
+}
+
+.main .page5 .footer .social p {
+    font-family: 'Plain';
+    margin-bottom: 3vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+
+.main .page5 .footer .social .platfrom1,
+.main .page5 .footer .social .platfrom2,
+.main .page5 .footer .social .platfrom3,
+.main .page5 .footer .social .platfrom4,
+.main .page5 .footer .social .platfrom5,
+.main .page5 .footer .social .platfrom6 {
+    font-family: 'Plain';
+    /* text-transform: uppercase; */
+    font-size: 0.8vw;
+    font-weight: 600;
+    overflow: hidden;
+    height: fit-content;
+}
+
+.main .page5 .footer .social h1 {
+    /* transition: all linear 0.1s; */
+}
+
+
+
+
+.main .page5 .footer .contact {
+    display: flex;
+    gap: 5vw;
+    height: 100%;
+}
+
+
+
+.main .page5 .footer .contact .address {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 30%;
+}
+
+
+
+.main .page5 .footer .contact .address p {
+    font-family: 'Plain';
+    margin-bottom: 3vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+
+.main .page5 .footer .contact .address h1 {
+    font-family: 'Plain';
+}
+
+.main .page5 .footer .contact .email {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .page5 .footer .contact .email p {
+    font-family: 'Plain';
+    margin-bottom: 3vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.main .page5 .footer .contact .email .em {
+    width: 100%;
+    height: fit-content;
+}
+
+.main .page5 .footer .contact .email .em h1 {
+    font-family: 'Plain';
+}
+
+.main .page5  .underline5 {
+    width: 70%;
+    height: 2px;
+    margin-left: 30vw;
+    background-color: white;
+}

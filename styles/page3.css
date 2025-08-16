@@ -1,0 +1,579 @@
+.main .page3 {
+    /* pointer-events: none; */
+    height: fit-content;
+    width: 100%;
+    background-color: #151515;;
+}
+
+.main .page3 .heading-2 {
+    height: 27vh;
+    width: 70vw;
+    margin-left: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+
+
+.main .page3 .heading-2 h1 {
+    font-family: 'Plain';
+    text-transform: uppercase;
+    font-size: 7vw;
+}
+
+.main .page3 .heading-2 .underline {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.main .page3 .project-showcase {
+    padding: 1vw 5vw;
+    margin-top: 7vw;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1.2fr;
+    grid-gap: 2vw;
+    position: relative;
+    row-gap: 0;
+}
+
+.main .page3 .project-showcase .project1 {
+    height: 75vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.main .page3 .project-showcase .project1 .pro-head {
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+}
+
+.main .page3 .project-showcase .project1 .pro-head h1 {
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-family: 'Plain';
+}
+
+.main .page3 .project-showcase .project1 .img-contener {
+    height: 70%;
+    width: 100%;
+    position: relative;
+}
+
+.main .page3 .project-showcase .project1 .img-contener img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.main .page3 .project-showcase .project1 .description {
+    height: 18%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .page3 .project-showcase .project1 .description p {
+    font-size: 1vw;
+    font-family: 'Plain';
+}
+
+.main .page3 .project-showcase .project1 .underline {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+
+
+.main .page3 .project-showcase .project2 {
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+
+
+
+
+.main .page3 .project-showcase .project2 .pro-head {
+    width: 100%;
+    height: 7.7%;
+    overflow: hidden;
+}
+
+.main .page3 .project-showcase .project2 .pro-head h1 {
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-family: 'Plain';
+}
+
+.main .page3 .project-showcase .project2 .img-contener {
+    height: 72.3%;
+    width: 100%;
+    position: relative;
+}
+
+.main .page3 .project-showcase .project2 .img-contener img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.main .page3 .project-showcase .project2 .description {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .page3 .project-showcase .project2 .description p {
+    font-size: 1vw;
+    font-family: 'Plain';
+}
+
+.main .page3 .project-showcase .project2 .underline {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+
+.main .page3 .project-showcase .circle1 {
+    width: 20vw;
+    height: 20vw;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    margin-top: 25vw;
+    margin-left: 10vw;
+    position: relative;
+}
+
+.main .page3 .project-showcase .circle1 .effect {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    transform: scale(0);
+    transition: all ease-in-out 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .page3 .project-showcase .circle1 .effect p {
+    transform: scale(0);
+    color: black;
+    font-family: 'Plain';
+    font-size: 0.9vw;
+    will-change: transform;
+    transition: all ease 0.5s;
+    transition-delay: 0.5s;
+    width: 70%;
+    font-weight: 500;
+}
+
+.main .page3 .project-showcase .circle1:hover .effect {
+    transform: scale(1);
+}
+
+.main .page3 .project-showcase .circle1:hover .effect p {
+    transform: scale(1);
+    /* transition-delay: 0s; */
+}
+
+
+.main .page3 .project-showcase .circle1 svg {
+    height: 7vw;
+    position: absolute;
+}
+
+.main .page3 .project-showcase .circle2 {
+    width: 20vw;
+    height: 20vw;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    /* margin-top: 30vw; */
+    margin-left: 1vw;
+    position: relative;
+}
+
+
+.main .page3 .project-showcase .circle2 .effect {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    transform: scale(0);
+    transition: all ease-in-out 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .page3 .project-showcase .circle2 .effect p {
+    transform: scale(0);
+    color: black;
+    font-family: 'Plain';
+    font-size: 0.9vw;
+    will-change: transform;
+    transition: all ease 0.5s;
+    transition-delay: 0.5s;
+    width: fit-content;
+    font-weight: 500;
+}
+
+
+.main .page3 .project-showcase .circle2:hover .effect {
+    transform: scale(1);
+}
+
+.main .page3 .project-showcase .circle2:hover .effect p {
+    transform: scale(1);
+}
+
+.main .page3 .project-showcase .circle2 svg {
+    height: 7vw;
+    transform: rotate(315deg);
+    position: absolute;
+}
+
+
+.main .page3 .project-showcase .project3 {
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 5vw;
+}
+
+
+
+.main .page3 .project-showcase .project3 .pro-head {
+    width: 100%;
+    height: 7.7%;
+    overflow: hidden;
+}
+
+.main .page3 .project-showcase .project3 .pro-head h1 {
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-family: 'Plain';
+}
+
+.main .page3 .project-showcase .project3 .img-contener {
+    height: 72.3%;
+    width: 100%;
+    position: relative;
+}
+
+.main .page3 .project-showcase .project3 .img-contener img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.main .page3 .project-showcase .project3 .description {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .page3 .project-showcase .project3 .description p {
+    font-size: 1vw;
+    font-family: 'Plain';
+}
+
+.main .page3 .project-showcase .project3 .underline {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.main .page3 .project-showcase .project4 {
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: -4vw;
+}
+
+
+
+.main .page3 .project-showcase .project4 .pro-head {
+    width: 100%;
+    height: 7.7%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.main .page3 .project-showcase .project4 .pro-head h1 {
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-family: 'Plain';
+}
+
+.main .page3 .project-showcase .project4 .img-contener {
+    height: 72.3%;
+    width: 100%;
+    position: relative;
+}
+
+.main .page3 .project-showcase .project4 .img-contener img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.main .page3 .project-showcase .project4 .description {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .page3 .project-showcase .project4 .description p {
+    font-size: 1vw;
+    font-family: 'Plain';
+}
+
+.main .page3 .project-showcase .project4 .underline {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+
+.main .page3 .project-showcase .project5 {
+    height: 75vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: -14.5vw;
+
+}
+
+.main .page3 .project-showcase .project5 .pro-head {
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+}
+
+.main .page3 .project-showcase .project5 .pro-head h1 {
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-family: 'Plain';
+}
+
+.main .page3 .project-showcase .project5 .img-contener {
+    height: 70%;
+    width: 100%;
+    position: relative;
+}
+
+.main .page3 .project-showcase .project5 .img-contener img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.main .page3 .project-showcase .project5 .description {
+    height: 18%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .page3 .project-showcase .project5 .description p {
+    font-size: 1vw;
+    font-family: 'Plain';
+}
+
+.main .page3 .project-showcase .project5 .underline {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+
+
+.main .page3 .project-showcase .project6 {
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 4vw;
+}
+
+
+
+.main .page3 .project-showcase .project6 .pro-head {
+    width: 100%;
+    height: 7.7%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.main .page3 .project-showcase .project6 .pro-head h1 {
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-family: 'Plain';
+}
+
+.main .page3 .project-showcase .project6 .img-contener {
+    height: 72.3%;
+    width: 100%;
+    position: relative;
+}
+
+.main .page3 .project-showcase .project6 .img-contener img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.main .page3 .project-showcase .project6 .description {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .page3 .project-showcase .project6 .description p {
+    font-size: 1vw;
+    font-family: 'Plain';
+}
+
+.main .page3 .project-showcase .project6 .underline {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+
+.main .page3 .project-showcase .circle3 {
+    width: 20vw;
+    height: 20vw;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    margin-top: 25vw;
+    margin-left: 12vw;
+    position: relative;
+}
+
+.main .page3 .project-showcase .circle3 .effect {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    transform: scale(0);
+    transition: all ease-in-out 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .page3 .project-showcase .circle3 .effect p {
+    transform: scale(0);
+    color: black;
+    font-family: 'Plain';
+    font-size: 0.9vw;
+    will-change: transform;
+    transition: all ease 0.5s;
+    transition-delay: 0.5s;
+    width: fit-content;
+    font-weight: 500;
+}
+
+
+.main .page3 .project-showcase .circle3:hover .effect {
+    transform: scale(1);
+}
+
+.main .page3 .project-showcase .circle3:hover .effect p {
+    transform: scale(1);
+}
+
+.main .page3 .project-showcase .circle3 svg {
+    height: 7vw;
+    transform: rotate(270.01deg);
+    position: absolute;
+}
+
+.main .page3 .project-showcase .circle4 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    background-color: #FFA63D;
+    border-radius: 50%;
+    top: 100%;
+    right: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.3s;
+}
+
+.main .page3 .project-showcase .circle4 p {
+    font-family: 'Plain';
+    font-size: 0.9;
+}
+
+
+.main .page3 .project-showcase .circle4:hover {
+    transform: scale(0.85);
+}
+
+
+
+
+
+
+.iiii{
+    z-index: 999999;
+    display: none;
+}
